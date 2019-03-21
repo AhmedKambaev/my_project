@@ -58,7 +58,7 @@ const reducer = (state = initialState, action) => {
         case 'BOOK_ADDED':
             const book = action.payload;
             const newItem = {
-                id: idBook++,
+                id: ++idBook,
                 title: book.title,
                 author: book.author,
                 likes: 0,
