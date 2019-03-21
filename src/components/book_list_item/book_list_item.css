@@ -1,0 +1,79 @@
+.right-float {
+    float: right;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui.cards {
+    margin-bottom: 10px;
+}
+
+img {
+    min-height: 100%;
+}
+
+.title-center {
+    text-align: center;
+}
+
+.overflow {
+    overflow: hidden;
+    height: 300px;
+}
+
+.list-books-shopping {
+    list-style-type: none;
+}
+
+.block-up-buy {
+    position: fixed;
+    right: 180px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    align-items: center;
+
+    animation-name: scale2;
+    animation-duration: 0.6s;
+}
+
+.block-message {
+    background-color: dimgray;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.block-message p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dimmer {
+    position: relative;
+}
+
+@keyframes scale2 {
+    from {
+        right: 220px;
+        opacity: 0;
+    }
+    do {
+        right: 180px;
+        opacity: 1;
+    }
+}
+
+.price-block {
+    color: white;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    font-size: 18px;
+}

@@ -1,0 +1,109 @@
+.menu {
+    padding: 20px 100px;
+    border-bottom: 1px solid;
+}
+
+.library {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.logotype {
+    font-size: 18px;
+}
+
+.ui.button:not(.icon)>.icon:not(.button):not(.dropdown).m0 {
+    margin: 0;
+}
+
+.ui.items>.item>.content {
+    padding: 7px;
+}
+
+.image {
+    border: 1px solid gray;
+}
+
+.ui.items>.item .extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui.items>.item>.content p:last-child {
+    height: 70px;
+    overflow-y: auto;
+}
+
+.logo-block, .ui.items>.item .meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-book {
+    margin-right: 40px;
+}
+
+.cart-link {
+    font-size: 22px;
+}
+
+.ui.items>.item .extra:after {
+    display: none;
+}
+
+.ui.items>.item .extra>* {
+    margin: 0;
+}
+
+.library-shop {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.pop-up-reading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-reading {
+    background-color: white;
+    border-radius: 6px;
+    width: 35%;
+    padding: 15px;
+
+    animation-name: scale;
+    animation-duration: 0.7s;
+}
+
+.block-author, .block-regular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-regular {
+    margin-top: 15px;
+}
+
+.title-book {
+    text-align: center;
+}
+
+.ext-book {
+    max-height: 300px;
+    overflow-y: auto;
+}

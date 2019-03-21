@@ -1,0 +1,9 @@
+.list-books {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.book-cart {
+    margin-right: 20px;
+}
