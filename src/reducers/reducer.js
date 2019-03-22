@@ -5,9 +5,9 @@ const initialState = {
     shopping: [],
     loading: true
 };
-const reducer = (state = initialState, action) => {
-    let idBook = 20;
+let idBook = 20;
 
+const reducer = (state = initialState, action) => {
     switch(action.type) {
         case 'BOOKS_LOADED':
             return {
@@ -58,7 +58,7 @@ const reducer = (state = initialState, action) => {
         case 'BOOK_ADDED':
             const book = action.payload;
             const newItem = {
-                id: ++idBook,
+                id: idBook,
                 title: book.title,
                 author: book.author,
                 likes: 0,
@@ -67,6 +67,7 @@ const reducer = (state = initialState, action) => {
                 image: book.image,
                 time: new Date().getHours() + ':' + new Date().getMinutes()
             };
+            idBook++;
             return {
                 ...state,
                 books: [
